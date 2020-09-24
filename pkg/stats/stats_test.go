@@ -1,6 +1,6 @@
 package stats
 import (
-	"github.com/iamgafurov/bank/pkg/bank/types"
+	"github.com/iamgafurov/bank/pkg/types"
 	"fmt"
 )
 func AvgTest(){
