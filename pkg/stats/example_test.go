@@ -37,7 +37,7 @@ func ExampleTotalInCategory(){
 		ID: 1,
 		Amount: 1232,
 		Category:"b",
-		Status: "Fail",
+		Status: types.StatusFail,
 	},
 	types.Payment{
 		ID: 2,
@@ -49,7 +49,7 @@ func ExampleTotalInCategory(){
 		ID: 3,
 		Amount:1232,
 		Category:"b",
-		Status: "Ok",
+		Status: types.StatusOk ,
 	},
 	types.Payment{
 		ID: 4,
