@@ -3,7 +3,7 @@ import (
 	"github.com/iamgafurov/bank/v2/pkg/types"
 	"fmt"
 )
-func AvgTest(){
+func ExampleAvg(){
 	payments := []types.Payment{
 	types.Payment{
 		ID: 1,
@@ -31,7 +31,7 @@ func AvgTest(){
 	//1232
 }
 
-func TotalInCategoryTest(){
+func ExampleTotalInCategory(){
 	payments := []types.Payment{
 	types.Payment{
 		ID: 1,
@@ -49,7 +49,7 @@ func TotalInCategoryTest(){
 		ID: 3,
 		Amount:1232,
 		Category:"b",
-		Status: "Fail",
+		Status: "Ok",
 	},
 	types.Payment{
 		ID: 4,
@@ -60,5 +60,5 @@ func TotalInCategoryTest(){
 fmt.Println(TotalInCategory(payments,"b"))
 
 //Output: 
-//2464
+//1232
 }

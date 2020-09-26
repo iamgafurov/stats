@@ -4,12 +4,14 @@ import (
 )
 func Avg(payments []types.Payment) types.Money{
 	sum:= types.Money(0)
+	kol:= 0
 	for _,payment := range payments{
 		if(payment.Status != "Fail"){
 			sum= sum + payment.Amount
+			kol = kol + 1
 		}
 	}
-	return sum / types.Money(len(payments))
+	return sum / types.Money(kol)
 
 }
 
