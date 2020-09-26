@@ -23,7 +23,7 @@ func ExampleAvg(){
 	types.Payment{
 		ID: 4,
 		Amount: 1232,
-		Status: "Ok",
+		Status: "Fail",
 	},
 	}
 	fmt.Println(Avg(payments))
