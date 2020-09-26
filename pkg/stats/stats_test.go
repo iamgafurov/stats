@@ -26,9 +26,9 @@ func AvgTest(){
 		Status: "Ok",
 	},
 	}
-fmt.Println(Avg(payments))
-//Output: 
-//1232
+	fmt.Println(Avg(payments))
+	//Output: 
+	//1232
 }
 
 func TotalInCategoryTest(){
