@@ -37,7 +37,7 @@ func CategoriesTotal(payments []types.Payment)map[types.Category]types.Money{
 	}
 	return categories
 }
-
+ 
 func CategoriesAvg(payments []types.Payment)map[types.Category]types.Money{
 	categories := make(map[types.Category]types.Money)
 	counts := make(map[types.Category]types.Money)
